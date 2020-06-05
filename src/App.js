@@ -1,13 +1,18 @@
 import React from 'react';
+
+import UsersList from './components/UsersList'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <UsersList />
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;
